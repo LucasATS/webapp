@@ -1,5 +1,5 @@
 ﻿@page
-@model Site_Aspnet.Pages.Clients.Edit
+@model webapp.Pages.Clients.Edit
 @{
 }
 <br />
@@ -12,29 +12,29 @@
     </div>
 }
 <form method="POST"> 
-    <input type="hidden" name="id" value="@Model.clientInfo.id" />
+    <input type="hidden" name="id" value="@Model.cliente.id" />
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Nome</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="name" value="@Model.clientInfo.Name" />
+            <input type="text" class="form-control" name="name" value="@Model.cliente.Name" />
         </div>
     </div>
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">E-mail</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="email" value="@Model.clientInfo.email" />
+            <input type="text" class="form-control" name="email" value="@Model.cliente.email" />
         </div>
     </div>
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Fone</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="phone" value="@Model.clientInfo.phone" />
+            <input type="text" class="form-control" name="phone" value="@Model.cliente.phone" />
         </div>
     </div>
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Endereço</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="adress" value="@Model.clientInfo.adress" />
+            <input type="text" class="form-control" name="adress" value="@Model.cliente.adress" />
         </div>
     </div>
 

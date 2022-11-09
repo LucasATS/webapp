@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\OneDrive\\Desktop\\System\\INSTED\\DEV. WEB\\Site Aspnet\\Site Aspnet.csproj": {}
+    "C:\\Users\\lucas\\OneDrive\\Documentos\\GitHub\\webapp\\webapp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\OneDrive\\Desktop\\System\\INSTED\\DEV. WEB\\Site Aspnet\\Site Aspnet.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Documentos\\GitHub\\webapp\\webapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Desktop\\System\\INSTED\\DEV. WEB\\Site Aspnet\\Site Aspnet.csproj",
-        "projectName": "Site Aspnet",
-        "projectPath": "C:\\Users\\lucas\\OneDrive\\Desktop\\System\\INSTED\\DEV. WEB\\Site Aspnet\\Site Aspnet.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Documentos\\GitHub\\webapp\\webapp.csproj",
+        "projectName": "webapp",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\GitHub\\webapp\\webapp.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\OneDrive\\Desktop\\System\\INSTED\\DEV. WEB\\Site Aspnet\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\GitHub\\webapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

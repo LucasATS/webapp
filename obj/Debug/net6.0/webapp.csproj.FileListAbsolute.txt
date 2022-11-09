@@ -1,0 +1,8 @@
+C:\Users\lucas\OneDrive\Documentos\GitHub\webapp\obj\Debug\net6.0\webapp.csproj.AssemblyReference.cache
+C:\Users\lucas\OneDrive\Documentos\GitHub\webapp\obj\Debug\net6.0\webapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\OneDrive\Documentos\GitHub\webapp\obj\Debug\net6.0\webapp.AssemblyInfoInputs.cache
+C:\Users\lucas\OneDrive\Documentos\GitHub\webapp\obj\Debug\net6.0\webapp.AssemblyInfo.cs
+C:\Users\lucas\OneDrive\Documentos\GitHub\webapp\obj\Debug\net6.0\webapp.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Documentos\GitHub\webapp\obj\Debug\net6.0\webapp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lucas\OneDrive\Documentos\GitHub\webapp\obj\Debug\net6.0\webapp.RazorAssemblyInfo.cache
+C:\Users\lucas\OneDrive\Documentos\GitHub\webapp\obj\Debug\net6.0\webapp.RazorAssemblyInfo.cs
