@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+body {
+    margin: 0%;
+}
+
+header {
+    background-color: white;
+    height: 150px;
+}
+
+article {
+    background-color: white;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-weight: 400;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+}
+
+a:hover, a:active {
+    color: rgb(60, 60, 60);
+    font-weight: 700;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+
+    text-align: center;
+    align-self: center;
+    align-items: center;
+
+    margin-left: 5%;
+    padding: 10px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.Roboto {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.OpenSans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.texto-tipo1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    width: 601;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+}
+
+.texto-tipo2 {
+    width: 601;
+    text-align: left;
+    border-bottom: 10px solid white;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 96px;
+}
+
+.banner {
+    background-image: url("../img/modelo-mulher.jpg");
+
+    height: 700px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.button1 {
+    font-family: 'Open Sans', sans-serif;
+    font: 12px;
+    color: white;
+    padding: 16px 36px;
+    height: 53px;
+    border-radius: 2px;
+    background: #D1161E;
+    border: 0px solid #24A45F;
+}
+
+.button1:hover {
+    -webkit-transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    transition: opacity .2s ease-out;
+    opacity: .6
+}
+
+.abs-left {
+    position: absolute;
+    left: 0;
+}
+
+.abs-right {
+    position: absolute;
+    right: 0;
+}
+
+.self-center {
+    display: flex;
+    justify-self: center;
+}
