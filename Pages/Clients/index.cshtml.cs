@@ -1,19 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Data;
+using Microsoft.Data;
+using Microsoft.Data.SqlClient;
+using System.Web;
+using treinamento.util.Cliente;
+using treinamento.util.DAO;
 
-namespace webapp.Pages.Clients;
-
-public class index : PageModel
+namespace treinamento.Pages.Clients
 {
-    private readonly ILogger<index> _logger;
 
-    public index(ILogger<index> logger)
+    public class IntexModel : PageModel
     {
-        _logger = logger;
-    }
+        // public void OnTest()
+        // {
+        //     // var location = new Uri($"{Request.Scheme}://{Request.Host}{Request.Path}{Request.QueryString}");
+        //     Request.QueryString.ToString().Split('=')[1]
+        // }
 
-    public void OnGet()
-    {
+        public List<ClienteDados> listClients = new List<ClienteDados>();
+        public void OnGet()
+        {
+            listClients = DAO.Read_AllClientes();
+        }
     }
 }
-

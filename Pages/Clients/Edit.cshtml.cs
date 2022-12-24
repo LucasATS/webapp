@@ -1,19 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace webapp.Pages.Clients;
+using treinamento.util.Cliente;
+using treinamento.util.DAO;
 
-public class Edit : PageModel
+namespace treinamento.Pages.Clients
 {
-    private readonly ILogger<Edit> _logger;
 
-    public Edit(ILogger<Edit> logger)
+    public class Edit : PageModel
     {
-        _logger = logger;
-    }
+        public ClienteDados clientInfo = new ClienteDados();
 
-    public void OnGet()
-    {
+        public string errorMessage = "";
+
+        public void OnGet()
+        {
+            clientInfo = DAO.Read_ClienteById(int.Parse(Request.Query["id"]));
+            clientInfo.print("Update:");
+        }
+
+        public IActionResult OnPost()
+        {
+            DAO.Update_ClienteById(int.Parse(Request.Query["id"]), Request.Form["name"], Request.Form["email"], Request.Form["phone"], Request.Form["adress"]);
+
+            return Redirect("/Clients");
+        }
     }
 }
-

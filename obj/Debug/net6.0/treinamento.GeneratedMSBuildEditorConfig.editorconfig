@@ -1,0 +1,60 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = treinamento
+build_property.RootNamespace = treinamento
+build_property.ProjectDir = c:\Users\lucas\OneDrive\Desktop\System\INSTED\DEV. WEB\PROVA 2\treinamento\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\lucas\OneDrive\Desktop\System\INSTED\DEV. WEB\PROVA 2\treinamento
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/Clients/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xjcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/Clients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/Clients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/Clients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/lucas/OneDrive/Desktop/System/INSTED/DEV. WEB/PROVA 2/treinamento/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1380rqjux6

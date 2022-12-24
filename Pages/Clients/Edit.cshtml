@@ -1,44 +1,47 @@
 ﻿@page
-@model webapp.Pages.Clients.Edit
+@model treinamento.Pages.Clients.Edit
 @{
 }
+
 <br />
-<h2> Editar Clientes </h2>
-@if (Model.errorMessage.Length > 0)
+
+<h3> Editar os dados do clientes @Model.clientInfo.name</h3>
+<h5> Essa conta foi criada em @Model.clientInfo.create_at</h5>
+@* @if (Model.errorMessage.Length > 0)
 {
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong> @Model.errorMessage</strong>
         <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="close">Fechar</button>
     </div>
-}
-<form method="POST"> 
-    <input type="hidden" name="id" value="@Model.cliente.id" />
+} *@
+<form method="POST">
+    <input type="hidden" name="id" value="@Model.clientInfo.Id" />
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Nome</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="name" value="@Model.cliente.Name" />
+            <input type="text" class="form-control" name="name" value="@Model.clientInfo.name" />
         </div>
     </div>
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">E-mail</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="email" value="@Model.cliente.email" />
+            <input type="text" class="form-control" name="email" value="@Model.clientInfo.email" />
         </div>
     </div>
     <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Fone</label>
+        <label class="col-sm-3 col-form-label">Telefone</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="phone" value="@Model.cliente.phone" />
+            <input type="text" class="form-control" name="phone" value="@Model.clientInfo.phone" />
         </div>
     </div>
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Endereço</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="adress" value="@Model.cliente.adress" />
+            <input type="text" class="form-control" name="adress" value="@Model.clientInfo.adress" />
         </div>
     </div>
 
-    @if (Model.sucessMessage.Length > 0)
+    @* @if (Model.sucessMessage.Length > 0)
     {
         <div class="row mb-3">
             <div class="col-sm-9">
@@ -48,7 +51,7 @@
                 </div>
             </div>
         </div>
-    }
+    } *@
 
     <div class="row mb-3">
         <div class="offset-sm-3 col-sm-3 d-grid">

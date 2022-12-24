@@ -1,12 +1,13 @@
 ﻿@page
-@model webapp.Pages.Clients.index
+@model treinamento.Pages.Clients.IntexModel
 @{
     ViewData["Title"] = "Clientes";
 }
-<h1>@ViewData["Title"]</h1>
 
-<button class="button1" style="margin-left: 5%;">Novo Cliente</button>
-<table>
+<h1>Lista de Clientes</h1>
+
+<a class="btn btn-primary btn-sm" a href="clients/create">Novo Cliente</a>
+<table class="table-bordered">
     <thead>
         <tr>
             <th>ID</th>
@@ -19,23 +20,20 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-        </tr>
-        <tr>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-            <td>TESTE</td>
-        </tr>
+        @foreach (var item in Model.listClients)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.name</td>
+                <td>@item.phone</td>
+                <td>@item.email</td>
+                <td>@item.adress</td>
+                <td>@item.create_at</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" a href="clients/edit?id=@item.Id">Edit</a>
+                    <a class="btn btn-danger btn-sm" a href="clients/delete?id=@item.Id">Del</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

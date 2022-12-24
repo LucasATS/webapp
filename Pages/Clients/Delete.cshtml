@@ -1,32 +1,15 @@
 ﻿@page
-@using System.Data.SqlClient;
+@model treinamento.Pages.Clients.DeleteModel
 @{
-    String ident = Request.Query["id"];
-
-    try
-    {
-        string connectionstring = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=teste;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
-        using (SqlConnection connection = new SqlConnection(connectionstring))
-        {
-            connection.Open();
-            String sql = "DELETE FROM clients " +
-                         " WHERE id=@ident ";
-
-
-            using (SqlCommand command = new SqlCommand(sql, connection))
-            {
-                
-                command.Parameters.AddWithValue("@ident", ident);
-
-                command.ExecuteNonQuery();
-            }
-        }
-    }
-    catch (Exception ex)
-    {
-
-        
-    }
-    Response.Redirect("/Clients/index");
+    ViewData["Title"] = "Deletar Cliente";
 }
+
+<h3>Tem certeza que deseja deletar a conta @Model.cliente.name?</h3>
+
+<span>
+    <form method="post">
+        <input type="hidden" name="id" value="@Model.cliente.Id">
+        <input class='btn btn-primary' type="submit" value="Confirmar">
+        <a class='btn btn-danger' href="/Clients">Cancelar</a>
+    </form>
+</span>

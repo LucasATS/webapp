@@ -1,87 +1,47 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
+    <title>@ViewData["Title"] - treinamento</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/webapp.styles.css" asp-append-version="true" />
-
-    @* <script src="thalia almeida tiburtino da silva.js" type="text/javascript" charset="utf-8"></script> *@
-    @* <link rel="stylesheet" href="thalia almeida tiburtino da silva.css" type="text/css" media="all" /> *@
-
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;700&display=swap"
-        rel="stylesheet">
-
+    <link rel="stylesheet" href="~/treinamento.styles.css" asp-append-version="true" />
 </head>
-
 <body>
-    <header class="col">
-
-        @* <section>
-            <ul class="row center" style="padding: 10px;">
-                <li>
-                    <a asp-area="" asp-page="/Index" style="color: red;">Home</a>
-                </li>
-                <li>
-                    <a asp-area="" asp-page="/Privacy" style="color: red;">Privacy</a>
-                </li>
-                <li>
-                    <a asp-area="" asp-page="/Clients/index" style="color: red;">Clientes</a>
-                </li>
-            </ul>
-        </section> *@
-
-        <section class="row center" style="background-color: #F2F2F2; height: 70px;">
-
-            <img class="abs-left" width="123px" height="40px" style="margin-left: 10px;"
-                src="~/img/logo-nicepage.png" />
-            <nav class="row self-center" style="gap: 15px;">
-                @* <a href=""><img width="32px" height="32px" src="~/img/img1.png"></a>
-                <a href=""><img width="32px" height="32px" src="~/img/img2.png"></a>
-                <a href=""><img width="32px" height="32px" src="~/img/img3.png"></a>
-                <a href=""><img width="32px" height="32px" src="~/img/img4.png"></a>
-                <a href=""><img width="32px" height="32px" src="~/img/img5.png"></a> *@
-
-                <a asp-area="" asp-page="/Index">Home</a>
-                <a asp-area="" asp-page="/Privacy">Privacy</a>
-                <a asp-area="" asp-page="/Clients/index">Clientes</a>
-            </nav>
-            <img class="abs-right" style="padding-bottom: 20px;" width="18px" height="18px"
-                src="~/img/icon-close.png" />
-
-        </section>
-
-        <section class="row center" style="height: 80px; justify-content: space-between;">
-            <img width="64px" height="32px" style="padding: 0px 100px 0px 100px;" src="~/img/logo.png" />
-
-            <a href="#" style="padding: 0px 100px 0px 100px;">
-                <img width="24px" height="24px" src="~/img/menu.png" />
-            </a>
-        </section>
-
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">treinamento</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Clients/Index">Clientes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <div>
+    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="col center" style="background-color: #F2F2F2; height: 532px;">
-        <h5 class="Roboto" style="color: #999999; font-size: 18px;">NOSSOS SERVIÇOS</h5><br />
-        <h1 class="Roboto" style="color: #111111; font-size: 50px;">Como podemos te ajudar?</h1>
-        <p class="OpenSans" style="color: #111111; font-size: 20px; width: 780px;">
-            <span>Somos especializados em tornar as experiências de manutenção de rotina e reparos de emergência sem
-                preocupações. Ligue para nós hoje para saber como nosso processo realmente é simples!</span>
-        </p>
-        <input type="button" class="button1" onclick="mudarPagina();" value="AGENDE AGORA" />
-    </footer>
-
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - TESTE - <a asp-area="" style="color: #0077cc" asp-page="/Privacy">Privacy</a>
+            &copy; 2022 - treinamento - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
@@ -91,5 +51,4 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-
 </html>
